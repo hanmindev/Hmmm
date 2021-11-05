@@ -1,10 +1,9 @@
 # Hmmm
 Hanmin's Minecraft Math Module  
 
-This library was originally written because of the fact that Minecraft can only perform arithmetic operations on 32-bit signed integers, which is insufficient for many practices.  
-I looked for a pre-existing floating-point library but 
+This library was originally written because of the fact that Minecraft can only perform arithmetic operations on 32-bit signed integers, which is insufficient for many practices. This library can compactly store 32-bit floating point numbers as integers (while maintaining identical bits), in addition to being able to perform operations on them. This library can also store 64-bit objects as two integers (again, while maintaining identical bits).  
 
-After realizing that 32-bit floating point numbers can be represented using a 32-bit integer, 
+Another useful function of this library is that it lets you easily create lists and perform operations on them (hopefully anyways, as I haven't actually made that at the time of writing).
 
 # lingo
 Unfortunately, there is no style standard for Minecraft Functions. Thus, I will briefly describe the style standard I will be using.
