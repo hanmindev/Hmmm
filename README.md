@@ -1,0 +1,40 @@
+# Hmmm
+Hanmin's Minecraft Math Module  
+
+This library was originally written because of the fact that Minecraft can only perform arithmetic operations on 32-bit signed integers, which is insufficient for many practices.  
+I looked for a pre-existing floating-point library but 
+
+After realizing that 32-bit floating point numbers can be represented using a 32-bit integer, 
+
+# lingo
+Unfortunately, there is no style standard for Minecraft Functions. Thus, I will briefly describe the style standard I will be using.
+
+**Function Header**
+All functions will have a header comprised of four sections:
+1. path  
+  The name will be in datapack:folder/subfolder/file format. This is identical to how functions are called in Minecraft.
+2. description  
+  A simple description of the function
+3. parameters  
+  The variables that will be used as inputs for the function.
+4. return variables  
+  The variables the outputs will be assigned to.
+
+**Variables**  
+Minecraft essentially has two main methods of holding data: scoreboards and data storage. Scoreboards can only hold signed 32 bit integers, while data storage can hold virtually any variable type (int, float, double, string, lists, etc).
+
+***Scoreboard Variables***  
+Variables which hold data in the form of scoreboards will be represented in the format:
+
+```O.Pn```
+
+In which O is the scoreboard objective name, P is the prefix for the scoreboard player name (optional), and n is an index.  
+For example, the variable IO.R0 could be accessed in-game using ```/scoreboard players get R0 IO```.  
+
+Multiple variables can be represented using curley brackets. For example:  
+```IO.R{0..3}``` would represent variables ```IO.R0, IO.R1, IO.R2, IO.R3```  
+```IO.R{0, 2, 6}``` would represent variables ```IO.R0, IO.R2, IO.R6```  
+
+***Storage Variables***  
+I haven't thought about this yet
+
