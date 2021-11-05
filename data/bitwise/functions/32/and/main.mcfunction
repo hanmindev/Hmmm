@@ -1,6 +1,5 @@
 #> bitwise:32/and/main
-#
-# Return the bitwise and of IO.P{0, 1}
+#   Return the bitwise and of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}

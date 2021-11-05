@@ -1,6 +1,5 @@
 #> bitwise:32/signed/divide/main
-#
-# Return the signed quotient of IO.P{0, 1}
+#   Return the signed quotient of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}

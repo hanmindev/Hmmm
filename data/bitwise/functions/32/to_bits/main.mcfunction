@@ -1,6 +1,5 @@
 #> bitwise:32/to_bits/main
-#
-# Convert integer into 32-bit boolean array (little endian)
+#   Convert integer into 32-bit boolean array (little endian)
 #
 # @params
 #   IO.P0

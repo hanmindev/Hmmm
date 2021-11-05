@@ -1,6 +1,5 @@
 #> bitwise:32/unsigned/modulo/main
-#
-# Return the unsigned modulo of IO.P{0, 1}
+#   Return the unsigned modulo of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}

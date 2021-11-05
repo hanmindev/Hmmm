@@ -1,6 +1,5 @@
 #> bitwise:32/add/main
-#
-# Return the sum of IO.P{0, 1}
+#   Return the sum of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}
