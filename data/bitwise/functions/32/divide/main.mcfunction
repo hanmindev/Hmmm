@@ -1,6 +1,5 @@
 #> bitwise:32/modulo/main
-#
-# Return the modulo of IO.P{0, 1}
+#   Return the modulo of IO.P{0, 1}
 #
 # @params
 #   IO.F0 = {0, 1}

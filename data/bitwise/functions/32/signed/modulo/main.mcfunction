@@ -1,6 +1,5 @@
 #> bitwise:32/signed/modulo/main
-#
-# Return the signed modulo of IO.P{0, 1}
+#   Return the signed modulo of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}

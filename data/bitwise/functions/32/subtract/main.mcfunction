@@ -1,6 +1,5 @@
 #> bitwise:32/subtract/main
-#
-# Return the difference of IO.P{0, 1}
+#   Return the difference of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}

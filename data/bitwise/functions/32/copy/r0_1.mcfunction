@@ -1,6 +1,5 @@
 #> bitwise:32/copy/r0_1
-#
-# Copy 32 bits from IO.R{0..31} to temp{0..31}
+#   Copy 32 bits from IO.R{0..31} to temp{0..31}
 #
 # @params
 #   IO.R{0..31}

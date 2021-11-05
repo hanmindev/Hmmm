@@ -1,6 +1,5 @@
 #> bitwise:32/divide/main
-#
-# Return the quotient of IO.P{0, 1}
+#   Return the quotient of IO.P{0, 1}
 #
 # @params
 #   IO.F0 = {0, 1}

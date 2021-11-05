@@ -1,6 +1,5 @@
 #> bitwise:32/unsigned/divmod/main
-#
-# Return the unsigned quotient and modulo of IO.P{0, 1}
+#   Return the unsigned quotient and modulo of IO.P{0, 1}
 #
 # @params
 #   IO.P{0, 1}
@@ -11,6 +10,7 @@
 #
 # IO.R0 = div
 # IO.R1 = mod
+#
 
 scoreboard players operation R0 IO = P0 IO
 execute if score P1 IO matches 1.. run function bitwise:32/unsigned/divmod/b0
