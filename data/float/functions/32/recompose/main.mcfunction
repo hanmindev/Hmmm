@@ -1,6 +1,6 @@
 #> float:32/recompose/main
 #   Return the 32-bit floating-point representation using
-#   IO.P0 as an exponent and IO.P1 as a (signed) significand
+#   IO.P0 as an (signed) exponent and IO.P1 as a (signed) significand
 #   Essentially the inverse of float:32/decompose/main
 #
 # @params
