@@ -24,5 +24,3 @@ scoreboard players remove R1 IO 127
 
 # slice the exponent off
 scoreboard players operation R2 IO %= 8388608 constant
-# multiply by sign to yield signed significand
-scoreboard players operation R2 IO *= R0 IO
