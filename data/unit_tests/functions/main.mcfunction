@@ -1,6 +1,6 @@
-#> unit_test:main
+#> unit_tests:main
 #   Runs all the unit tests
-#
+##
 
 function unit_tests:float/decompose
 function unit_tests:float/redecompose

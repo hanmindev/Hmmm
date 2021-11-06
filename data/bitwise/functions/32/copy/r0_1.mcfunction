@@ -1,13 +1,13 @@
 #> bitwise:32/copy/r0_1
 #   Copy 32 bits from IO.R{0..31} to temp{0..31}
-#
+##
 # @params
 #   IO.R{0..31}
 #       32 bit array of boolean values
 # @returns
 #   temp{0..31}
 #       32 bit array of boolean values identical to the input
-#
+##
 
 scoreboard players operation 0 temp = R0 IO
 scoreboard players operation 1 temp = R1 IO

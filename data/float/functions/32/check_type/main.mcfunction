@@ -9,7 +9,7 @@
 #       32-bit type as specified above (it would be
 #       nice if we could save bits since we really
 #       only need 2 but are using 32 :( )
-#
+##
 
 scoreboard players set R0 IO 5
 execute if score P1 IO matches 128 run function float:32/check_type/dne

@@ -1,6 +1,6 @@
 #> unit_test:float/check_number_type
 #   Test the float check_type function
-#
+##
 
 data modify storage u_test name set value float_check_type
 function u_test:run/reset
