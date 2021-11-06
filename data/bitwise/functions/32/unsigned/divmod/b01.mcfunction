@@ -1,12 +1,12 @@
 #> bitwise:32/unsigned/divmod/b01
 #   branch from bitwise:32/unsigned/divmod/b0
-#
+##
 # IO.R0 = div
 # IO.R1 = mod
 # temp.0 = mod1
 # temp.1 = div1
 # temp.2 = or
-#
+##
 
 scoreboard players set 0 temp 1073741824
 scoreboard players operation 0 temp %= P1 IO

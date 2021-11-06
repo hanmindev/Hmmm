@@ -1,13 +1,13 @@
-#> float:32/decompose
+#> float:32/decompose/main
 #   Return the exponent and significand of IO.P0
-#
+##
 # @params
 #   IO.P0
 #       32-bit float
 # @returns
 #   IO.R{0, 1, 2}
 #       32-bit sign, 32-bit exponent, 32-bit significand
-#
+##
 
 # extract the leftmost bit (sign), leave R0 as 31-bits
 scoreboard players set R0 IO 0

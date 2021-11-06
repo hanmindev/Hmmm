@@ -1,13 +1,13 @@
 #> bitwise:32/to_bits/main
 #   Convert integer into 32-bit boolean array (little endian)
-#
+##
 # @params
 #   IO.P0
 #       32-bit integer
 # @returns
 #   IO.R{0..31}
 #       32-bit array of boolean values
-#
+##
 
 scoreboard players operation 0 temp = P0 IO
 

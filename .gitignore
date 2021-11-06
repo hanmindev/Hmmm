@@ -1,0 +1,4 @@
+data/.vscode/launch.json
+data/unit_tests/functions/main.mcfunction
+.vscode/launch.json
+.gitignore
