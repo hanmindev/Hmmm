@@ -1,4 +1,4 @@
-#> unit_test:float/redecompose
+#> unit_tests:float/redecompose
 #   Test the float decomposition and recomposition function
 #   Since they are inverses of one another, recompose(decompose(x))=x
 ##
