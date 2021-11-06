@@ -23,6 +23,10 @@ scoreboard players operation 3 temp = P3 IO
 scoreboard players operation 4 temp = P4 IO
 scoreboard players operation 5 temp = P5 IO
 
+# add the implicit leading bit
+scoreboard players add 2 temp 8388608
+scoreboard players add 5 temp 8388608
+
 # if... else handler. If temp.6 = 1, end.
 scoreboard players set 6 temp 0
 

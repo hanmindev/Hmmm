@@ -3,5 +3,8 @@
 
 # F0 = temp.{0, 1, 2}
 
-execute unless score R2 IO matches 8388608.. run function float:32/add/branch11111
-execute if score R2 IO matches 8388608.. run function float:32/add/branch11110
+# no overflow
+execute unless score R2 IO matches 16777216.. run function float:32/add/branch11111
+
+# fix significand overflow
+execute if score R2 IO matches 16777216.. run function float:32/add/branch11110

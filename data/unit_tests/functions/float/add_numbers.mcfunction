@@ -19,15 +19,14 @@ function float:32/decompose/main
 scoreboard players operation P0 IO = R0 IO
 scoreboard players operation P1 IO = R1 IO
 scoreboard players operation P2 IO = R2 IO
-#function float:32/add/main
-#scoreboard players operation P0 IO = R0 IO
-#scoreboard players operation P1 IO = R1 IO
-#scoreboard players operation P2 IO = R2 IO
-#function float:32/recompose/main
-#scoreboard players operation actual u_test = R0 IO
-#
-#function u_test:run/score
-#
-#
-#function u_test:run/end_set
-#
+function float:32/add/main
+scoreboard players operation P0 IO = R0 IO
+scoreboard players operation P1 IO = R1 IO
+scoreboard players operation P2 IO = R2 IO
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 IO
+
+function u_test:run/score
+
+
+function u_test:run/end_set

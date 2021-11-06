@@ -1,4 +1,4 @@
-#> float:32/decompose
+#> float:32/decompose/main
 #   Return the exponent and significand of IO.P0
 ##
 # @params
