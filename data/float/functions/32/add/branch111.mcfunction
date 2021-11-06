@@ -7,8 +7,18 @@
 scoreboard players operation R0 IO = 0 temp
 scoreboard players operation R1 IO = 1 temp
 scoreboard players operation R2 IO = 2 temp
-# add significands TODO: are the place values correctly initialized or do I have to shift them to match decimal
+
+# add signs
+execute if score 0 temp matches 1 run scoreboard players operation R2 IO *= -1 constant
+execute if score 3 temp matches 1 run scoreboard players operation 5 temp *= -1 constant
+
+
+# add significands
 scoreboard players operation R2 IO += 5 temp
+
+# remove sign from significands
+execute if score R2 IO matches ..-1 run function float:32/add/branch1112
+
 
 # if sum of significands are 0, output 0
 execute if score R2 IO matches 0 run function float:32/add/branch1110
