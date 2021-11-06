@@ -13,4 +13,4 @@
 
 scoreboard players set R0 IO 5
 execute if score P1 IO matches 128 run function float:32/check_type/dne
-execute if score P1 IO matches -127 run function float:32/check_type/zero
+execute if score P1 IO matches -127 if score P2 IO matches 0 run function float:32/check_type/zero

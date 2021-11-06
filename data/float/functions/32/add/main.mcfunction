@@ -30,10 +30,14 @@ scoreboard players add 5 temp 8388608
 # if... else handler. If temp.6 = 1, end.
 scoreboard players set 6 temp 0
 
-# check whether F0 is 0
+# check whether F0 is NaN, infinity, or 0
 function float:32/check_type/main
+
+# nan exception
+execute if score R0 IO matches 0 run function float:32/add/exception/nan
 
 # return F1 if F0 is 0
 execute if score R0 IO matches 3..4 run function float:32/add/branch0
+
 # other case
 execute if score 6 temp matches 0 run function float:32/add/branch1
