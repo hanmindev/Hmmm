@@ -5,7 +5,9 @@
 function float:32/add/branch1101
 
 # if significand is 0, return F0
-# this is already done above
+scoreboard players operation R0 IO = 0 temp
+scoreboard players operation R1 IO = 1 temp
+scoreboard players operation R2 IO = 2 temp
 
 # if significand is not 0, repeat from branch11
-execute unless score 5 temp matches 0 run function float:32/add/branch11
+execute unless score 6 temp matches 0 run function float:32/add/branch11

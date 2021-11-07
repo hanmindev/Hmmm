@@ -1,15 +1,12 @@
-#> unit_tests:test
-#   Test to get to a state
-##
 
-scoreboard players set expected u_test -978044485
+scoreboard players set expected u_test 2139095040
 
-scoreboard players set P0 IO 1
+scoreboard players set P0 IO 1086324736
 function float:32/decompose/main
 scoreboard players operation P3 IO = R0 IO
 scoreboard players operation P4 IO = R1 IO
 scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -978044485
+scoreboard players set P0 IO 2139095040
 function float:32/decompose/main
 scoreboard players operation P0 IO = R0 IO
 scoreboard players operation P1 IO = R1 IO
@@ -42,7 +39,8 @@ execute if score R0 IO matches 3..4 run function float:32/add/branch0
 
 # other case
 
-
+#> float:32/add/branch1
+##
 
 # store F0 state
 scoreboard players operation 7 temp = R0 IO
@@ -53,3 +51,11 @@ scoreboard players operation P1 IO = 4 temp
 scoreboard players operation P2 IO = 5 temp
 scoreboard players remove P2 IO 8388608
 function float:32/check_type/main
+
+# return F0 if F1 is 0
+execute if score R0 IO matches 3..4 run function float:32/add/branch10
+
+# nan exception
+execute if score R0 IO matches 0 run function float:32/add/exception/nan
+
+# If F0 is an infinity, check if F1 a different infinity. Otherwise return F0
