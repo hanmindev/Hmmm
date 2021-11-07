@@ -213,5 +213,27 @@ scoreboard players operation actual u_test = R0 IO
 
 function u_test:run/score
 
+# test 9
+# -5767.21630859375 - small number = -5767.21630859375
+scoreboard players set expected u_test -978044485
+
+scoreboard players set P0 IO 1
+function float:32/decompose/main
+scoreboard players operation P3 IO = R0 IO
+scoreboard players operation P4 IO = R1 IO
+scoreboard players operation P5 IO = R2 IO
+scoreboard players set P0 IO -978044485
+function float:32/decompose/main
+scoreboard players operation P0 IO = R0 IO
+scoreboard players operation P1 IO = R1 IO
+scoreboard players operation P2 IO = R2 IO
+function float:32/add/main
+scoreboard players operation P0 IO = R0 IO
+scoreboard players operation P1 IO = R1 IO
+scoreboard players operation P2 IO = R2 IO
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 IO
+
+function u_test:run/score
 
 function u_test:run/end_set
