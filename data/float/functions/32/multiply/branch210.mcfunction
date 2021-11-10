@@ -1,8 +1,19 @@
-scoreboard players reset * temp
-scoreboard players set 2 temp 11315378
-scoreboard players set 5 temp 10839207
+#> float:32/multiply/branch210
+#   Multiply significands
+#
 
+# fix sign
+scoreboard players set R0 IO 0
+execute unless score 0 temp = 3 temp run scoreboard players set R0 IO 1
 
+# add implicit bit
+scoreboard players add 2 temp 8388608
+scoreboard players add 5 temp 8388608
+
+# set exponent
+scoreboard players operation R1 IO = 1 temp
+
+# multiply using the factoring thing
 
 # calculate ac
 # get a and b (temp.0, temp.1)
@@ -41,10 +52,9 @@ scoreboard players operation 6 temp *= 3 temp
 scoreboard players operation 6 temp /= 4096 constant
 # add to temp.5
 scoreboard players operation 5 temp += 6 temp
-scoreboard players operation 5 temp /= 2048 constant
 
 # right bitshift shift by 3
-#scoreboard players operation 5 temp /= 2048 constant
+scoreboard players operation 5 temp /= 2048 constant
 scoreboard players operation R2 IO += 5 temp
 
 execute if score R2 IO matches 16777216.. run function float:32/multiply/branch2100
