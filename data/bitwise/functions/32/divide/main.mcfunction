@@ -1,5 +1,5 @@
-#> bitwise:32/modulo/main
-#   Return the modulo of IO.P[0, 1]
+#> bitwise:32/divide/main
+#   Return the quotient of IO.P[0, 1]
 ##
 # @params
 #   IO.F0 = [0, 1]
@@ -12,5 +12,5 @@
 ##
 
 
-execute if score F0 IO matches 0 run function bitwise:32/unsigned/modulo/main
-execute if score F0 IO matches 1 run function bitwise:32/signed/modulo/main
+execute if score F0 IO matches 0 run function bitwise:32/unsigned/divide/main
+execute if score F0 IO matches 1 run function bitwise:32/signed/divide/main
