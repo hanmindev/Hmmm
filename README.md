@@ -30,9 +30,9 @@ Variables which hold data in the form of scoreboards will be represented in the 
 In which O is the scoreboard objective name, P is the prefix for the scoreboard player name (optional), and n is an index.  
 For example, the variable IO.R0 could be accessed in-game using ```/scoreboard players get R0 IO```.  
 
-Multiple variables can be represented using curley brackets. For example:  
-```IO.R{0..3}``` would represent variables ```IO.R0, IO.R1, IO.R2, IO.R3```  
-```IO.R{0, 2, 6}``` would represent variables ```IO.R0, IO.R2, IO.R6```  
+Multiple variables can be represented using square brackets. For example:  
+```IO.R[0..3]``` would represent variables ```IO.R0, IO.R1, IO.R2, IO.R3```  
+```IO.R[0, 2, 6]``` would represent variables ```IO.R0, IO.R2, IO.R6```  
 
 ***Storage Variables***  
 Variables which hold data in the form of data storage will be represented in the format:
@@ -41,9 +41,9 @@ Variables which hold data in the form of data storage will be represented in the
 
 In which O is the target name, and P is the target path.
 
-For example, the variable \[u_test.expected\] can be accessed in-game using ```/data get storage u_test expected```
+For example, the variable \{u_test.expected\} can be accessed in-game using ```/data get storage u_test expected```
 
-Storage variables can also be indexed using square brackets. For example:  
+Storage variables can also be indexed using curly brackets. For example:  
 ```{u_test.expected}[5]``` would represent the 6th element in \{u_test.expected\} (because arrays begin at 0).  
 
 For most cases, storage variables will not be needed. (If my plan works). Once I am done with this library, pulling data from NBT storage in this library will be equivalent to pulling data by address in the RAM; not really required because it will be done in the back.
