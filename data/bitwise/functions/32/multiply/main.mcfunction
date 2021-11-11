@@ -1,8 +1,8 @@
 #> bitwise:32/multiply/main
-#   Return the product of IO.P{0, 1}
+#   Return the product of IO.P[0, 1]
 ##
 # @params
-#   IO.P{0, 1}
+#   IO.P[0, 1]
 #       Two 32-bit integers
 # @returns
 #   IO.R0

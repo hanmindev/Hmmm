@@ -2,7 +2,7 @@
 #   Return what a decomposed float is.
 #   0 = NaN, 1 = Inf, 2 = -Inf, 3 = 0, 4 = -0, 5 = Proper Number
 # @params
-#   IO.P{0, 1, 2}
+#   IO.P[0, 1, 2]
 #       32-bit sign, 32-bit (signed) exponent, 32-bit significand
 # @returns
 #   IO.R0

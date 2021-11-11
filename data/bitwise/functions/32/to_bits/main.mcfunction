@@ -5,7 +5,7 @@
 #   IO.P0
 #       32-bit integer
 # @returns
-#   IO.R{0..31}
+#   IO.R[0..31]
 #       32-bit array of boolean values
 ##
 

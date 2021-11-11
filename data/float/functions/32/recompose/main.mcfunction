@@ -5,7 +5,7 @@
 #   Essentially the inverse of float:32/decompose/main
 ##
 # @params
-#   IO.P{0, 1, 2}
+#   IO.P[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
 #   IO.R0

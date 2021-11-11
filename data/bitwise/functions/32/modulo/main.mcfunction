@@ -1,10 +1,10 @@
 #> bitwise:32/divide/main
-#   Return the quotient of IO.P{0, 1}
+#   Return the quotient of IO.P[0, 1]
 ##
 # @params
-#   IO.F0 = {0, 1}
+#   IO.F0 = [0, 1]
 #       Whether the 32-bit integers are signed or unsigned
-#   IO.P{0, 1}
+#   IO.P[0, 1]
 #       Two 32-bit integers
 # @returns
 #   IO.R0
