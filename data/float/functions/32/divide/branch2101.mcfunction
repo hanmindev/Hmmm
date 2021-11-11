@@ -3,4 +3,4 @@
 #
 
 scoreboard players remove R1 IO 1
-scoreboard players operation R2 IO *= 2 constant
+function float:32/divide/branch2102
