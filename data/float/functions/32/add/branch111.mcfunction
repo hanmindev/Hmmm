@@ -1,9 +1,9 @@
 #> float:32/add/branch111
 # exponents are equal
 
-# F0 = IO.R{0, 1, 2}, temp.{0, 1, 2}, F1 = temp.{3, 4, 5}
+# F0 = IO.R[0, 1, 2], temp.[0, 1, 2], F1 = temp.[3, 4, 5]
 
-# set IO.R{0, 1, 2} to F0
+# set IO.R[0, 1, 2] to F0
 scoreboard players operation R0 IO = 0 temp
 scoreboard players operation R1 IO = 1 temp
 scoreboard players operation R2 IO = 3 temp

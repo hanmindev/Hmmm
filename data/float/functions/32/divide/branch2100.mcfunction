@@ -3,5 +3,4 @@
 #
 
 scoreboard players add R2 IO 1
-scoreboard players add 3 temp 1
 scoreboard players operation 0 temp -= 1 temp

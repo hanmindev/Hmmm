@@ -1,5 +1,5 @@
 #> float:32/add/branch10
-#   Sets IO.R{0, 1, 2} to IO.P{0, 1, 2}
+#   Sets IO.R[0, 1, 2] to IO.P[0, 1, 2]
 ##
 
 scoreboard players operation R0 IO = 0 temp

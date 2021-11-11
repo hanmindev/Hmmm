@@ -2,12 +2,12 @@
 #   Return the quotient of two 32-bit floats
 ##
 # @params
-#   IO.P{0, 1, 2}
+#   IO.P[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
-#   IO.P{3, 4, 5}
+#   IO.P[3, 4, 5]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
-#   IO.R{0, 1, 2}
+#   IO.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 ##
 

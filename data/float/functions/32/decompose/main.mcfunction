@@ -5,7 +5,7 @@
 #   IO.P0
 #       32-bit float
 # @returns
-#   IO.R{0, 1, 2}
+#   IO.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 ##
 

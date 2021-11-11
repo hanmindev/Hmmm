@@ -1,11 +1,11 @@
 #> bitwise:32/copy/r0_1
-#   Copy 32 bits from IO.R{0..31} to temp{0..31}
+#   Copy 32 bits from IO.R[0..31] to temp[0..31]
 ##
 # @params
-#   IO.R{0..31}
+#   IO.R[0..31]
 #       32 bit array of boolean values
 # @returns
-#   temp{0..31}
+#   temp[0..31]
 #       32 bit array of boolean values identical to the input
 ##
 

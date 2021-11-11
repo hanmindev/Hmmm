@@ -13,15 +13,11 @@ scoreboard players add 5 temp 8388608
 # set exponent
 scoreboard players operation R1 IO = 1 temp
 
-# divide using the factoring thing
+# divide using long division
 
-
-# calculate ac
-# get a and b (temp.0, temp.1)
 scoreboard players operation 0 temp = 2 temp
 scoreboard players operation 1 temp = 5 temp
 scoreboard players set R2 IO 0
-scoreboard players set 3 temp 0
 scoreboard players operation 0 temp *= 64 constant
 scoreboard players operation 1 temp *= 64 constant
 

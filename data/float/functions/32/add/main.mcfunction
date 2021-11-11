@@ -2,16 +2,16 @@
 #   Return the sum of two 32-bit floats
 ##
 # @params
-#   IO.P{0, 1, 2}
+#   IO.P[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
-#   IO.P{3, 4, 5}
+#   IO.P[3, 4, 5]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
-#   IO.R{0, 1, 2}
+#   IO.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 ##
-#   F0 = temp.{0, 1, 2}, IO.P{0, 1, 2}
-#   F1 = temp.{3, 4, 5}, IO.P{3, 4, 5}
+#   F0 = temp.[0, 1, 2], IO.P[0, 1, 2]
+#   F1 = temp.[3, 4, 5], IO.P[3, 4, 5]
 ##
 
 # maintain a copy of the inputs
