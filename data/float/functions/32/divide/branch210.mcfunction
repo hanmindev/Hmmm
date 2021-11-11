@@ -1,9 +1,10 @@
-scoreboard players reset * temp
+#> float:32/divide/branch210
+#   divide significands
+#
 
-scoreboard players operation 2 temp = P2 IO
-scoreboard players operation 5 temp = P5 IO
-#scoreboard players reset * IO
-
+# fix sign
+scoreboard players set R0 IO 0
+execute unless score 0 temp = 3 temp run scoreboard players set R0 IO 1
 
 # add implicit bit
 scoreboard players add 2 temp 8388608
@@ -49,3 +50,9 @@ function float:32/divide/branch2102
 function float:32/divide/branch2102
 function float:32/divide/branch2102
 function float:32/divide/branch2102
+
+execute if score R2 IO matches ..8388608 run function float:32/divide/branch2101
+
+
+# remove implicit bit
+scoreboard players remove R2 IO 8388608
