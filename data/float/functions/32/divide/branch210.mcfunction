@@ -25,7 +25,7 @@ scoreboard players set 3 temp 0
 scoreboard players operation 0 temp *= 64 constant
 scoreboard players operation 1 temp *= 64 constant
 
-
+# do this 24 times
 function float:32/divide/branch2102
 function float:32/divide/branch2102
 function float:32/divide/branch2102
@@ -52,6 +52,7 @@ function float:32/divide/branch2102
 function float:32/divide/branch2102
 
 execute if score R2 IO matches ..8388608 run function float:32/divide/branch2101
+execute if score 0 temp >= 1 temp run scoreboard players add R2 IO 1
 
 
 # remove implicit bit

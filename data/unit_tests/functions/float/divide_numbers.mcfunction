@@ -595,4 +595,28 @@ scoreboard players operation actual u_test = R0 IO
 function u_test:run/score
 
 
+# test 26
+# -53567.51953125 / -63.63137054443359375 = 841.84136962890625
+scoreboard players set expected u_test 1146254809
+
+scoreboard players set P0 IO -1031895418
+function float:32/decompose/main
+scoreboard players operation P3 IO = R0 IO
+scoreboard players operation P4 IO = R1 IO
+scoreboard players operation P5 IO = R2 IO
+scoreboard players set P0 IO -950976635
+function float:32/decompose/main
+scoreboard players operation P0 IO = R0 IO
+scoreboard players operation P1 IO = R1 IO
+scoreboard players operation P2 IO = R2 IO
+function float:32/divide/main
+scoreboard players operation P0 IO = R0 IO
+scoreboard players operation P1 IO = R1 IO
+scoreboard players operation P2 IO = R2 IO
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 IO
+
+function u_test:run/score
+
+
 function u_test:run/end_set
