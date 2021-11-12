@@ -1,5 +1,5 @@
-#> float:32/check_type/dne
-#   branch for numbers that do not exist
+#> float:32/check_type/inf
+#   branch for infinities
 ##
 
 execute if score P0 io matches 0 run scoreboard players set R0 io 1
