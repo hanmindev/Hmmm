@@ -2,5 +2,5 @@
 #   Normalize Float
 #
 
-scoreboard players add R1 IO 1
-scoreboard players operation R2 IO /= 2 constant
+scoreboard players add R1 io 1
+scoreboard players operation R2 io /= 2 constant

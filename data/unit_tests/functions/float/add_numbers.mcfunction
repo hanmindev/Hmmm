@@ -9,22 +9,22 @@ function u_test:run/reset
 # 27504.27734375 + 64317.64453125 = 91821.921875
 scoreboard players set expected u_test 1202935542
 
-scoreboard players set P0 IO 1188487310
+scoreboard players set P0 io 1188487310
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1199259045
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1199259045
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -32,22 +32,22 @@ function u_test:run/score
 # 64317.64453125 + 27504.27734375 = 91821.921875
 scoreboard players set expected u_test 1202935542
 
-scoreboard players set P0 IO 1199259045
+scoreboard players set P0 io 1199259045
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1188487310
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1188487310
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -55,22 +55,22 @@ function u_test:run/score
 # 27504.27734375 + -64317.64453125 = -36813.3671875
 scoreboard players set expected u_test -955265698
 
-scoreboard players set P0 IO 1188487310
+scoreboard players set P0 io 1188487310
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -948224603
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -948224603
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -78,22 +78,22 @@ function u_test:run/score
 # -64317.64453125 + 27504.27734375 = -36813.3671875
 scoreboard players set expected u_test -955265698
 
-scoreboard players set P0 IO -948224603
+scoreboard players set P0 io -948224603
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1188487310
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1188487310
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -101,22 +101,22 @@ function u_test:run/score
 # inf + inf = inf
 scoreboard players set expected u_test 2139095040
 
-scoreboard players set P0 IO 2139095040
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095040
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -124,22 +124,22 @@ function u_test:run/score
 # -inf + -inf = -inf
 scoreboard players set expected u_test -8388608
 
-scoreboard players set P0 IO -8388608
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -8388608
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -147,22 +147,22 @@ function u_test:run/score
 # inf + -inf = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 2139095040
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -8388608
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -170,22 +170,22 @@ function u_test:run/score
 # -inf + inf = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO -8388608
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095040
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -194,22 +194,22 @@ function u_test:run/score
 # NaN + -inf = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 2139095041
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -8388608
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -217,22 +217,22 @@ function u_test:run/score
 # -inf + NaN = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO -8388608
+scoreboard players set P0 io -8388608
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095041
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -240,22 +240,22 @@ function u_test:run/score
 # NaN + anything = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 2139095041
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 7123474
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 7123474
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -263,22 +263,22 @@ function u_test:run/score
 # anything + NaN  = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 7123474
+scoreboard players set P0 io 7123474
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095041
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -286,22 +286,22 @@ function u_test:run/score
 # anything - NaN = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 2139095041
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 7123474
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 7123474
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/subtract/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -309,22 +309,22 @@ function u_test:run/score
 # anything - NaN = NaN
 scoreboard players set expected u_test 2139095041
 
-scoreboard players set P0 IO 7123474
+scoreboard players set P0 io 7123474
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095041
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095041
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/subtract/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -332,22 +332,22 @@ function u_test:run/score
 # -5767.21630859375 - -74327.125 = 68559.9140625
 scoreboard players set expected u_test 1199958005
 
-scoreboard players set P0 IO -946787440
+scoreboard players set P0 io -946787440
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -978044485
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -978044485
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/subtract/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -356,22 +356,22 @@ function u_test:run/score
 # -5767.21630859375 + small number = -5767.21630859375
 scoreboard players set expected u_test -978044485
 
-scoreboard players set P0 IO 1
+scoreboard players set P0 io 1
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO -978044485
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io -978044485
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -379,22 +379,22 @@ function u_test:run/score
 # small number + -5767.21630859375 = -5767.21630859375
 scoreboard players set expected u_test -978044485
 
-scoreboard players set P0 IO -978044485
+scoreboard players set P0 io -978044485
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -403,22 +403,22 @@ function u_test:run/score
 # small number + 64327.234783 = 64327.234783
 scoreboard players set expected u_test 1199261500
 
-scoreboard players set P0 IO 1199261500
+scoreboard players set P0 io 1199261500
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 3177321
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 3177321
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -426,22 +426,22 @@ function u_test:run/score
 # 64327.234783 + small number = 64327.234783
 scoreboard players set expected u_test 1199261500
 
-scoreboard players set P0 IO 3177321
+scoreboard players set P0 io 3177321
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1199261500
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1199261500
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -449,22 +449,22 @@ function u_test:run/score
 # small number + small number = something small
 scoreboard players set expected u_test 8388609
 
-scoreboard players set P0 IO 1
+scoreboard players set P0 io 1
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -472,22 +472,22 @@ function u_test:run/score
 # inf + 6 = inf
 scoreboard players set expected u_test 2139095040
 
-scoreboard players set P0 IO 1086324736
+scoreboard players set P0 io 1086324736
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 2139095040
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
@@ -495,22 +495,22 @@ function u_test:run/score
 # 6 + inf = inf
 scoreboard players set expected u_test 2139095040
 
-scoreboard players set P0 IO 2139095040
+scoreboard players set P0 io 2139095040
 function float:32/decompose/main
-scoreboard players operation P3 IO = R0 IO
-scoreboard players operation P4 IO = R1 IO
-scoreboard players operation P5 IO = R2 IO
-scoreboard players set P0 IO 1086324736
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1086324736
 function float:32/decompose/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/add/main
-scoreboard players operation P0 IO = R0 IO
-scoreboard players operation P1 IO = R1 IO
-scoreboard players operation P2 IO = R2 IO
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
 function float:32/recompose/main
-scoreboard players operation actual u_test = R0 IO
+scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 

@@ -1,4 +1,4 @@
-scoreboard objectives add IO dummy
+scoreboard objectives add io dummy
 scoreboard objectives add temp dummy
 
 scoreboard objectives add constant dummy

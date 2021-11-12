@@ -1,11 +1,11 @@
 #> bitwise:32/unsigned/divide/main
-#   Return the unsigned quotient of IO.P[0, 1]
+#   Return the unsigned quotient of io.P[0, 1]
 ##
 # @params
-#   IO.P[0, 1]
+#   io.P[0, 1]
 #       Two 32-bit integers
 # @returns
-#   IO.R0
+#   io.R0
 #       32-bit integer
 ##
 

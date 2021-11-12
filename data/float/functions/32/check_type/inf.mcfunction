@@ -2,5 +2,5 @@
 #   branch for numbers that do not exist
 ##
 
-execute if score P0 IO matches 0 run scoreboard players set R0 IO 1
-execute if score P0 IO matches 1 run scoreboard players set R0 IO 2
+execute if score P0 io matches 0 run scoreboard players set R0 io 1
+execute if score P0 io matches 1 run scoreboard players set R0 io 2

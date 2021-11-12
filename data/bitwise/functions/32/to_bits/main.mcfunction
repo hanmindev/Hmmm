@@ -2,47 +2,47 @@
 #   Convert integer into 32-bit boolean array (little endian)
 ##
 # @params
-#   IO.P0
+#   io.P0
 #       32-bit integer
 # @returns
-#   IO.R[0..31]
+#   io.R[0..31]
 #       32-bit array of boolean values
 ##
 
-scoreboard players operation 0 temp = P0 IO
+scoreboard players operation 0 temp = P0 io
 
-scoreboard players set R0 IO 0
-scoreboard players set R1 IO 0
-scoreboard players set R2 IO 0
-scoreboard players set R3 IO 0
-scoreboard players set R4 IO 0
-scoreboard players set R5 IO 0
-scoreboard players set R6 IO 0
-scoreboard players set R7 IO 0
-scoreboard players set R8 IO 0
-scoreboard players set R9 IO 0
-scoreboard players set R10 IO 0
-scoreboard players set R11 IO 0
-scoreboard players set R12 IO 0
-scoreboard players set R13 IO 0
-scoreboard players set R14 IO 0
-scoreboard players set R15 IO 0
-scoreboard players set R16 IO 0
-scoreboard players set R17 IO 0
-scoreboard players set R18 IO 0
-scoreboard players set R19 IO 0
-scoreboard players set R20 IO 0
-scoreboard players set R21 IO 0
-scoreboard players set R22 IO 0
-scoreboard players set R23 IO 0
-scoreboard players set R24 IO 0
-scoreboard players set R25 IO 0
-scoreboard players set R26 IO 0
-scoreboard players set R27 IO 0
-scoreboard players set R28 IO 0
-scoreboard players set R29 IO 0
-scoreboard players set R30 IO 0
-scoreboard players set R31 IO 0
+scoreboard players set R0 io 0
+scoreboard players set R1 io 0
+scoreboard players set R2 io 0
+scoreboard players set R3 io 0
+scoreboard players set R4 io 0
+scoreboard players set R5 io 0
+scoreboard players set R6 io 0
+scoreboard players set R7 io 0
+scoreboard players set R8 io 0
+scoreboard players set R9 io 0
+scoreboard players set R10 io 0
+scoreboard players set R11 io 0
+scoreboard players set R12 io 0
+scoreboard players set R13 io 0
+scoreboard players set R14 io 0
+scoreboard players set R15 io 0
+scoreboard players set R16 io 0
+scoreboard players set R17 io 0
+scoreboard players set R18 io 0
+scoreboard players set R19 io 0
+scoreboard players set R20 io 0
+scoreboard players set R21 io 0
+scoreboard players set R22 io 0
+scoreboard players set R23 io 0
+scoreboard players set R24 io 0
+scoreboard players set R25 io 0
+scoreboard players set R26 io 0
+scoreboard players set R27 io 0
+scoreboard players set R28 io 0
+scoreboard players set R29 io 0
+scoreboard players set R30 io 0
+scoreboard players set R31 io 0
 
 execute if score 0 temp matches ..-1 run function bitwise:32/to_bits/r31
 execute if score 0 temp matches 1073741824.. run function bitwise:32/to_bits/r30
@@ -75,4 +75,4 @@ execute if score 0 temp matches 16.. run function bitwise:32/to_bits/r4
 execute if score 0 temp matches 8.. run function bitwise:32/to_bits/r3
 execute if score 0 temp matches 4.. run function bitwise:32/to_bits/r2
 execute if score 0 temp matches 2.. run function bitwise:32/to_bits/r1
-execute if score 0 temp matches 1.. run scoreboard players set R0 IO 1
+execute if score 0 temp matches 1.. run scoreboard players set R0 io 1
