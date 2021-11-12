@@ -2,5 +2,5 @@
 #   Normalize Float
 #
 
-scoreboard players remove R1 IO 1
+scoreboard players remove R1 io 1
 function float:32/divide/branch2102
