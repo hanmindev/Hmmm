@@ -1,0 +1,2 @@
+function float:uninstall
+function bitwise:uninstall
