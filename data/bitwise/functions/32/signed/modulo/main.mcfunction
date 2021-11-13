@@ -2,6 +2,8 @@
 #   Return the signed modulo of io.P[0, 1]
 ##
 # @params
+#   io.F0 = [0, 1]
+#       Whether the 32-bit integers are signed or unsigned
 #   io.P[0, 1]
 #       Two 32-bit integers
 # @returns
