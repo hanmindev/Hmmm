@@ -45,5 +45,3 @@ For example, the variable \{u_test.expected\} can be accessed in-game using ```/
 
 Storage variables can also be indexed using curly brackets. For example:  
 ```{u_test.expected}[5]``` would represent the 6th element in \{u_test.expected\} (because arrays begin at 0).  
-
-For most cases, storage variables will not be needed. (If my plan works). Once I am done with this library, pulling data from NBT storage in this library will be equivalent to pulling data by address in the RAM; not really required because it will be done in the back.
