@@ -68,6 +68,7 @@ scoreboard players operation R2 io += 5 temp
 
 execute if score R2 io matches 16777216.. run function float:32/multiply/branch2100
 
+# fix denormalized numbers
 execute if score R1 io matches -125.. unless score R2 io matches 8388608.. run function float:32/multiply/branch2103
 
 execute if score R1 io matches -126 unless score R2 io matches 8388608.. run scoreboard players set R1 io -127

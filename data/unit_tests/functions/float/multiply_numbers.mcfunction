@@ -357,8 +357,8 @@ scoreboard players operation actual u_test = R0 io
 function u_test:run/score
 
 # test 16
-# small number * small number = NaN
-scoreboard players set expected u_test 2139095041
+# small number * small number = 0
+scoreboard players set expected u_test 0
 
 scoreboard players set P0 io 1
 function float:32/decompose/main
@@ -438,6 +438,31 @@ scoreboard players operation P3 io = R0 io
 scoreboard players operation P4 io = R1 io
 scoreboard players operation P5 io = R2 io
 scoreboard players set P0 io 1082130432
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/multiply/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
+
+
+# test 19
+# big number * big number = inf
+scoreboard players set expected u_test 2139095040
+
+scoreboard players set P0 io 2080374784
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 2080374784
 function float:32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io

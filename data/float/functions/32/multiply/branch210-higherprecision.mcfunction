@@ -1,5 +1,5 @@
 #> float:32/multiply/branch210-higherprecision
-#   Multiply significands
+#   Multiply significands with higher precision. Seems to be identical.
 #
 
 # fix sign
