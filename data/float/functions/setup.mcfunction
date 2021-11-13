@@ -1,3 +1,5 @@
+#> float:setup
+
 scoreboard objectives add io dummy
 scoreboard objectives add temp dummy
 
@@ -12,7 +14,4 @@ scoreboard players set 1024 constant 1024
 scoreboard players set 128 constant 128
 scoreboard players set 64 constant 64
 scoreboard players set 8 constant 8
-
-
-
 scoreboard players set -1 constant -1
