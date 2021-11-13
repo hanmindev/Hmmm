@@ -25,9 +25,10 @@ scoreboard players operation 5 temp = P4 io
 scoreboard players operation 6 temp = P5 io
 scoreboard players operation 7 temp = P5 io
 
-# add the implicit leading bit
-scoreboard players add 3 temp 8388608
-scoreboard players add 7 temp 8388608
+# add the implicit leading bit if the exponent is not -127. If it is, add 1 to exponent and end.
+execute unless score 1 temp matches -127 run scoreboard players add 3 temp 8388608
+
+execute unless score 5 temp matches -127 run scoreboard players add 7 temp 8388608
 
 # if... else handler. If temp.8 = 1, end.
 scoreboard players set 8 temp 0

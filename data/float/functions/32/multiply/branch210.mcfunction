@@ -6,12 +6,21 @@
 scoreboard players set R0 io 0
 execute unless score 0 temp = 3 temp run scoreboard players set R0 io 1
 
-# add implicit bit
-scoreboard players add 2 temp 8388608
-scoreboard players add 5 temp 8388608
 
 # set exponent
 scoreboard players operation R1 io = 1 temp
+
+# add implicit bit
+
+execute unless score 4 temp matches 1 run scoreboard players add 2 temp 8388608
+execute unless score 4 temp matches 2 run scoreboard players add 5 temp 8388608
+
+# swap such that temp.2 is the denormalized mantissa
+execute if score 4 temp matches 2 run function float:32/multiply/branch2101
+
+
+execute if score R1 io matches -125.. if score 4 temp matches 1..2 run function float:32/multiply/branch2102
+
 
 # multiply using the factoring thing
 
@@ -59,6 +68,9 @@ scoreboard players operation R2 io += 5 temp
 
 execute if score R2 io matches 16777216.. run function float:32/multiply/branch2100
 
+execute if score R1 io matches -125.. unless score R2 io matches 8388608.. run function float:32/multiply/branch2103
+
+execute if score R1 io matches -126 unless score R2 io matches 8388608.. run scoreboard players set R1 io -127
 
 # remove implicit bit
-scoreboard players remove R2 io 8388608
+execute if score 8 temp matches 0 if score R2 io matches 8388608.. run scoreboard players remove R2 io 8388608
