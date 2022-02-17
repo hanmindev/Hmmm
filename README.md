@@ -118,7 +118,7 @@ Then, the result can be returned using:
 ```
 float:32/add/main
 float:32/check_type/main
-float:32/add/convert/to_storage/main
+float:32/convert/to_storage/main
 float:32/decompose/main
 float:32/divide/main
 float:32/multiply/main
