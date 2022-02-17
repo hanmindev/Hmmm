@@ -12,11 +12,12 @@ function float:32/check_type/main
 
 # store F1 state
 scoreboard players operation 10 temp = R0 io
-# return F0 if F1 is 0
-execute if score R0 io matches 3..4 run function float:32/add/branch10
 
 # nan exception
 execute if score R0 io matches 0 run function float:32/add/exception/nan
+
+# return F0 if F1 is 0
+execute if score R0 io matches 3..4 run function float:32/add/branch10
 
 # If F0 is an infinity, check if F1 a different infinity. Otherwise return F0
 execute if score 8 temp matches 0 if score 9 temp matches 1..2 run function float:32/add/branch2
