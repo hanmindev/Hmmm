@@ -3,8 +3,8 @@
 
 # F0 = io.R[0, 1, 2], temp.[0, 1, 2], F1 = temp.[3, 4, 5]
 
-# set io.R[0, 1, 3] to F0 TODO: is this right
-scoreboard players operation R0 io = 0 temp
+# set io.R[-, 1, 3] to F0. Set R0 to 0
+scoreboard players set R0 io 0
 scoreboard players operation R1 io = 1 temp
 scoreboard players operation R2 io = 3 temp
 
@@ -25,3 +25,5 @@ execute if score R2 io matches 0 run function float:32/add/branch1110
 
 # check for significand overflow
 execute unless score R2 io matches 0 run function float:32/add/branch1111
+
+scoreboard players set 7 temp 0
