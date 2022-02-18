@@ -167,8 +167,8 @@ function float:32/convert/to_storage/main
 data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
-########################################################################################################################
-# test 11
+
+# test 12
 # 01000011000000000000000000000000 -> 256.0f
 data modify storage u_test expected set value 256.0f
 
@@ -181,7 +181,7 @@ function float:32/convert/to_storage/main
 data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
-# test 11
+# test 13
 # 01000011000000000000000000000000 -> 512.0f
 data modify storage u_test expected set value 512.0f
 
@@ -194,7 +194,7 @@ function float:32/convert/to_storage/main
 data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
-# test 11
+# test 14
 # 01000011000000000000000000000000 -> 1024.0f
 data modify storage u_test expected set value 1024.0f
 
@@ -207,7 +207,7 @@ function float:32/convert/to_storage/main
 data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
-# test 11
+# test 15
 # 01000011000000000000000000000000 -> 2048.0f
 data modify storage u_test expected set value 2048.0f
 
@@ -220,11 +220,26 @@ function float:32/convert/to_storage/main
 data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
-# test 11
+# test 16
 # 01000011000000000000000000000000 -> 4096.0f
 data modify storage u_test expected set value 4096.0f
 
 scoreboard players set P0 io 1166016512
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/convert/to_storage/main
+data modify storage u_test actual set from storage io R0
+
+function u_test:run/storage
+
+function u_test:run/storage
+# test 17
+# 00000000000000000000000000000000 -> 0.0f
+data modify storage u_test expected set value 0.0f
+
+scoreboard players set P0 io 0
 function float:32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
