@@ -9,5 +9,6 @@ function unit_tests:float/add_numbers
 function unit_tests:float/multiply_numbers
 function unit_tests:float/divide_numbers
 function unit_tests:float/convert_to_storage
+function unit_tests:float/convert_from_int
 
 function u_test:run/end_all
