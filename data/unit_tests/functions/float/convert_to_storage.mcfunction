@@ -234,12 +234,25 @@ data modify storage u_test actual set from storage io R0
 
 function u_test:run/storage
 
-function u_test:run/storage
 # test 17
 # 00000000000000000000000000000000 -> 0.0f
 data modify storage u_test expected set value 0.0f
 
 scoreboard players set P0 io 0
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/convert/to_storage/main
+data modify storage u_test actual set from storage io R0
+
+function u_test:run/storage
+
+# test 18
+# 00111111100000000000000000000000 -> 1.0f
+data modify storage u_test expected set value 1.0f
+
+scoreboard players set P0 io 1065353216
 function float:32/decompose/main
 scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
