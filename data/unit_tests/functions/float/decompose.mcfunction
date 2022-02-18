@@ -69,5 +69,20 @@ data modify storage u_test actual append from storage u_test copy
 
 function u_test:run/storage
 
-function u_test:run/end_set
+# test 5
+data modify storage u_test expected set value [0,4,0]
+scoreboard players set P0 io 1098907648
+function float:32/decompose/main
 
+execute store result storage u_test copy int 1 run scoreboard players get R0 io
+data modify storage u_test actual append from storage u_test copy
+
+execute store result storage u_test copy int 1 run scoreboard players get R1 io
+data modify storage u_test actual append from storage u_test copy
+
+execute store result storage u_test copy int 1 run scoreboard players get R2 io
+data modify storage u_test actual append from storage u_test copy
+
+function u_test:run/storage
+
+function u_test:run/end_set
