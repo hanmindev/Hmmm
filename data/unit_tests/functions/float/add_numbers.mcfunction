@@ -724,4 +724,119 @@ scoreboard players operation actual u_test = R0 io
 
 function u_test:run/score
 
+# test 32
+# 1 + 821 = 822
+scoreboard players set expected u_test 1145929728
+
+scoreboard players set P0 io 1145913344
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1065353216
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/add/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
+# test 33
+# 821 - 1 = 820
+scoreboard players set expected u_test 1145896960
+
+scoreboard players set P0 io 1065353216
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1145913344
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/subtract/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
+# test 34
+# 10 - 10 = 0
+scoreboard players set expected u_test 0
+
+scoreboard players set P0 io 1092616192
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1092616192
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/subtract/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
+# test 35
+# 1821 - 1 = 1820
+scoreboard players set expected u_test 1155760128
+
+scoreboard players set P0 io 1065353216
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1155768320
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/subtract/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
+# test 36
+# 11821 - 1 = 11820
+scoreboard players set expected u_test 1178120192
+
+scoreboard players set P0 io 1065353216
+function float:32/decompose/main
+scoreboard players operation P3 io = R0 io
+scoreboard players operation P4 io = R1 io
+scoreboard players operation P5 io = R2 io
+scoreboard players set P0 io 1178121216
+function float:32/decompose/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/subtract/main
+scoreboard players operation P0 io = R0 io
+scoreboard players operation P1 io = R1 io
+scoreboard players operation P2 io = R2 io
+function float:32/recompose/main
+scoreboard players operation actual u_test = R0 io
+
+function u_test:run/score
+
 function u_test:run/end_set

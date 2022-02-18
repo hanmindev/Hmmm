@@ -3,7 +3,7 @@
 
 # F0 = io.R[0, 1, 2], temp.[0, 1, 2], F1 = temp.[3, 4, 5]
 
-# set io.R[0, 1, 2] to F0
+# set io.R[0, 1, 3] to F0 TODO: is this right
 scoreboard players operation R0 io = 0 temp
 scoreboard players operation R1 io = 1 temp
 scoreboard players operation R2 io = 3 temp
