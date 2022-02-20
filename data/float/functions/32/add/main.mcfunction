@@ -13,6 +13,7 @@
 #   F0 = temp.[0, 1, 2], io.P[0, 1, 2]
 #   F1 = temp.[3, 4, 5], io.P[3, 4, 5]
 ##
+# @modifies temp.[0..10]
 
 # maintain a copy of the inputs
 scoreboard players operation 0 temp = P0 io
