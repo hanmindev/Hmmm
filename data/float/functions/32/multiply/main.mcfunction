@@ -10,6 +10,7 @@
 #   io.R[0, 1, 2]
 #       32-bit sign, 32-bit exponent, 32-bit significand
 ##
+# @modifies temp.[0..8]
 
 # make a copy of everything
 scoreboard players operation 0 temp = P0 io

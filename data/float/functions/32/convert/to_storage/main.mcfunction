@@ -8,9 +8,9 @@
 #   {io.R0}
 #       storage float type
 ##
-scoreboard players add P2 io 8388608
-execute if score P0 io matches 1 run scoreboard players operation P2 io *= -1 constant
 
-# quaternary search tree for scale
+# scoreboard players set 0 temp 1
+# execute if score P1 io matches 128 run function float:32/convert/to_storage/special
+# execute if score 0 temp matches 1 unless score P1 io matches 128 run function float:32/convert/to_storage/number
 
-function float:32/convert/to_storage/b/main
+function float:32/convert/to_storage/number
