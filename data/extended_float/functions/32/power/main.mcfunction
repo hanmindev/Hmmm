@@ -12,21 +12,6 @@
 #
 # @modifies temp.[0..25]
 
-scoreboard players operation temp 23 = P3 io
-scoreboard players operation temp 24 = P4 io
-scoreboard players operation temp 25 = P5 io
-
-function extended_float:32/log/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
-
-scoreboard players operation P3 io = temp 23
-scoreboard players operation P4 io = temp 24
-scoreboard players operation P5 io = temp 25
-
-function float:32/multiply/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
-function extended_float:32/exponential/main
+scoreboard players set 0 temp 1
+execute if score P0 io matches 0 run function extended_float:32/power/positive_base
+execute if score 0 temp matches 1 run function extended_float:32/power/negative_base
