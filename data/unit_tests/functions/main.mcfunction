@@ -14,5 +14,6 @@ function unit_tests:extended_float/truncate
 function unit_tests:extended_float/floor
 function unit_tests:extended_float/exponent
 function unit_tests:extended_float/power
+function unit_tests:extended_float/float_type
 
 function u_test:run/end_all
