@@ -8,7 +8,7 @@
 #       32-bit sign, 32-bit exponent, 32-bit significand
 # @returns
 #   io.R0
-#       0 if false, 1 is true
+#       0 if false, 1 if true
 #
 scoreboard players set R0 io 0
 execute if score P0 io matches 0 if score P3 io matches 1 run scoreboard players set R0 io 1

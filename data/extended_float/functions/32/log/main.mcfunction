@@ -11,6 +11,7 @@
 #   F0 = temp.[0, 1, 2], io.P[0, 1, 2]
 #   F1 = temp.[3, 4, 5], io.P[3, 4, 5]
 ##
+# @modifies temp.[0..22]
 
 
 # copy variables io.P[0..5], temp.[0..10]
