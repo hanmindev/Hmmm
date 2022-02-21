@@ -1,4 +1,4 @@
-#> extended_float:32/cosine/main
+#> extended_float:32/cos/main
 #   Return the cosine of the 32-bit float
 ##
 # @params
@@ -9,5 +9,5 @@
 #       32-bit sign, 32-bit exponent, 32-bit significand
 #
 
-execute if score P1 io matches 128 run function extended_float:32/sine/nan
-execute unless score P1 io matches 128 run function extended_float:32/cosine/real
+execute if score P1 io matches 128 run function extended_float:32/sin/nan
+execute unless score P1 io matches 128 run function extended_float:32/cos/real

@@ -1,4 +1,4 @@
-#> extended_float:32/sine/nan
+#> extended_float:32/sin/nan
 #   Case when the angle is not real
 #
 
