@@ -1,11 +1,5 @@
-scoreboard players set expected u_test 1066235454
-
-scoreboard players set P0 io 1036831949
-function float:32/decompose/main
-scoreboard players operation P0 io = R0 io
-scoreboard players operation P1 io = R1 io
-scoreboard players operation P2 io = R2 io
-
+#> extended_float:32/exponential/non_zero
+#   e^x
 
 # Convert e^x to 2^((1/ln2)(2^(E-23)(2^23+m)))
 
@@ -56,28 +50,16 @@ scoreboard players operation 14 temp = R0 io
 scoreboard players operation 15 temp = R1 io
 scoreboard players operation 16 temp = R2 io
 
-# works till here
-
-# integer part
+# Check if exponent is greater than what floats can handle:
 scoreboard players operation P0 io = 11 temp
 scoreboard players operation P1 io = 12 temp
 scoreboard players operation P2 io = 13 temp
 
+# If positive, check if integer part is greater or equal to 128
+execute if score 11 temp matches 0 run function extended_float:32/exponential/positive
 
-# Add implicit bit to mantissa
-scoreboard players add P2 io 8388608
-# Turn float exponent into integer
-execute if score P1 io matches 6 run scoreboard players operation P2 io /= 131072 constant
-execute if score P1 io matches 5 run scoreboard players operation P2 io /= 262144 constant
-execute if score P1 io matches 4 run scoreboard players operation P2 io /= 524288 constant
-execute if score P1 io matches 3 run scoreboard players operation P2 io /= 1048576 constant
-execute if score P1 io matches 2 run scoreboard players operation P2 io /= 2097152 constant
-execute if score P1 io matches 1 run scoreboard players operation P2 io /= 4194304 constant
-execute if score P1 io matches 0 run scoreboard players operation P2 io /= 8388608 constant
-# Now P2 is an integer
-execute if score P0 io matches 1 run scoreboard players operation P2 io *= -1 constant
+# If negative, check if integer part is less or equal to 128
+execute if score 11 temp matches 1 run function extended_float:32/exponential/negative
 
-# Set P2 as the exponent for a new number temp.[11..13]
-scoreboard players set 11 temp 0
-scoreboard players operation 12 temp = P2 io
-scoreboard players set 13 temp 0
+# Exponent is in range:
+execute if score 11 temp matches 0..1 run function extended_float:32/exponential/in_range
