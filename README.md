@@ -41,10 +41,10 @@ Variables which hold data in the form of data storage will be represented in the
 
 In which O is the target name, and P is the target path.
 
-For example, the variable \{u_test.expected\} can be accessed in-game using ```/data get storage u_test expected```
+For example, the variable \{io.R0\} can be accessed in-game using ```/data get storage hmmm:io R0``` (Note: All data storage used in this datapack have prefix 'hmmm'.
 
 Storage variables can also be indexed using curly brackets. For example:  
-```{u_test.expected}[5]``` would represent the 6th element in \{u_test.expected\} (because arrays begin at 0).  
+```{io.R0}[5]``` would represent the 6th element in \{io.R0\} (because arrays begin at 0).  
 
 # Built-in Functions  
 Hmmm features:  
@@ -58,7 +58,7 @@ signed and unsigned 32-bit:
 7. Bitwise shift left/right  
 8. Create list of bits using 32-bit integer  
 
-32-bit floating-point:  
+32-bit floating-point (basic):  
 1. Decomposition (32-bit decomposition into to 1-bit, 8-bit, and 23-bit chunks)  
 2. Recomposition (inverse of Decomposition)  
 3. Addition  
@@ -66,6 +66,27 @@ signed and unsigned 32-bit:
 5. Multiplication  
 6. Division  
 7. Conversion to Storage (convert 32-bit representation into Minecraft NBT Storage format)  
+8. Conversion to Storage as Double (convert 32-bit representation into Minecraft NBT Storage format)  
+9. Conversion from int (convert Minecraft scoreboard to 32-bit representation)
+10. Negation (x -> -x, -x -> x)
+11. Absolute Value
+12. Compare (less, less or equal, equal, greater or equal, greater)
+
+32-bit floating-point (extended):
+1. Floor
+2. Ceiling
+3. Truncate (round to 0)
+4. Log
+5. Exponent (e^)
+6. Power
+7. nth Root
+8. Inverse Square Root
+9. Sine
+10. Cosine
+11. Tangent
+12. Arcsine
+13. Arcosine
+14. Arctangent
 
 # Bitwise Operations  
 
@@ -116,15 +137,41 @@ Then, the result can be returned using:
 
 ***All Floating-Point Functions***:  
 ```
-float:32/add/main
-float:32/check_type/main
-float:32/convert/to_storage/main
+
 float:32/decompose/main
-float:32/divide/main
-float:32/multiply/main
 float:32/recompose/main
+float:32/add/main
 float:32/subtract/main
+float:32/multiply/main
+float:32/divide/main
+float:32/convert/to_storage/main
+float:32/convert/to_storage_double/main
+float:32/convert/from_int/main
+float:32/negate/main
+float:32/absolute_value/main
+float:32/compare/less
+float:32/compare/less_equal
+float:32/compare/equal
+float:32/compare/greater
+float:32/compare/greater_equal
+
+extended_float:32/compare/floor
+extended_float:32/compare/ceiling
+extended_float:32/compare/truncate
+extended_float:32/compare/log
+extended_float:32/compare/exponential
+extended_float:32/compare/power
+extended_float:32/compare/root
+extended_float:32/compare/fast_inverse_sqrt
+extended_float:32/compare/sin
+extended_float:32/compare/cos
+extended_float:32/compare/tan
+extended_float:32/compare/asin
+extended_float:32/compare/acos
+extended_float:32/compare/atan
+
 ```
+
 
 Detailed information about each of these functions can be found by opening the datapack and opening each function file.
 
@@ -191,7 +238,7 @@ scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
 ```
 You can access the returned NBT storage float using  
-```/data get storage io R0```
+```/data get storage io hmmm:R0```
 
 # Endnote
 
