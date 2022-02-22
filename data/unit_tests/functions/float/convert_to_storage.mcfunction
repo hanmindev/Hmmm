@@ -16,7 +16,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -31,7 +31,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -46,7 +46,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -61,7 +61,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -76,7 +76,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -91,7 +91,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -106,7 +106,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -121,7 +121,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -136,7 +136,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -150,7 +150,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -164,7 +164,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -178,7 +178,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 # test 13
@@ -191,7 +191,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 # test 14
@@ -204,7 +204,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 # test 15
@@ -217,7 +217,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 # test 16
@@ -230,7 +230,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -244,7 +244,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
@@ -258,7 +258,7 @@ scoreboard players operation P0 io = R0 io
 scoreboard players operation P1 io = R1 io
 scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
-data modify storage u_test actual set from storage io R0
+data modify storage u_test actual set from storage hmmm:io R0
 
 function u_test:run/storage
 
