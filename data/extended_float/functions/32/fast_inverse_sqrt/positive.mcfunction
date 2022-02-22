@@ -114,3 +114,5 @@ scoreboard players operation P3 io = 14 temp
 scoreboard players operation P4 io = 15 temp
 scoreboard players operation P5 io = 16 temp
 function float:32/multiply/main
+
+scoreboard players set 11 temp 0
