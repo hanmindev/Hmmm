@@ -10,5 +10,7 @@
 #
 # @modifies temp.[11..16]
 
-execute if score P0 io matches 0 run function extended_float:32/fast_inverse_sqrt/positive
+scoreboard players set 11 temp 1
 execute if score P0 io matches 1 run function extended_float:32/fast_inverse_sqrt/nan
+execute if score P0 io matches 0 if score P1 io matches -127 if score P2 io matches 0 run function extended_float:32/fast_inverse_sqrt/inf
+execute if score 11 temp matches 1 run function extended_float:32/fast_inverse_sqrt/positive
