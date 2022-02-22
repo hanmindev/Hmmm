@@ -65,3 +65,5 @@ execute if score 8 temp matches 0 if score R1 io matches -126 unless score R0 io
 
 # remove implicit bit
 execute if score 8 temp matches 0 if score R1 io matches -126.. run scoreboard players remove R2 io 8388608
+
+execute if score R2 io matches 8388608.. run function float:32/divide/branch2106
