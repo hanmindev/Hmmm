@@ -16,3 +16,4 @@ scoreboard players operation R2 io = P2 io
 function extended_float:32/truncate/b/main
 
 execute if score P1 io matches 1..22 run scoreboard players operation R2 io -= P2 io
+execute if score P1 io matches ..0 run function extended_float:32/truncate/zero
