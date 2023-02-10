@@ -125,13 +125,15 @@ io.P\[0, 1\] as inputs and io.R0, io.R1 (if applicable) as output.
 
 ***Example Usage***  
 To perform ```1+1```:  
-```
-/scoreboard players set P0 io 1
-/scoreboard players set P1 io 1
-/function bitwise:32/signed/add/main
+```mcfunction
+scoreboard players set P0 io 1
+scoreboard players set P1 io 1
+function bitwise:32/signed/add/main
 ```
 Then, the result can be returned using:  
-```/scoreboard players get R0 io```  
+```mcfunction
+scoreboard players get R0 io
+```  
 
 # Floating Point Numbers
 
@@ -186,7 +188,7 @@ To perform operations on floats, you should set io.P\[0..2\] and io.P\[3..5\] ea
 
 ***Example Usage***  
 To perform ```27504.27734375 + 64317.64453125 = 91821.921875```:
-```
+```mcfunction
 # 1188487310 is the integer representation of 64317.64453125 (both 01000110110101101110000010001110)
 scoreboard players set P0 io 1188487310
 
@@ -218,7 +220,9 @@ function float:32/recompose/main
 ```
 
 You can get the result of this using:  
-```/scoreboard players get io R0```
+```mcfunction
+scoreboard players get io R0
+```
 which will return 1202935542, or 01000111101100110101011011110110 in binary and 91821.921875 as a floating point representation.
 
 
@@ -226,7 +230,7 @@ You can also convert floating point numbers into NBT Storage using ```float:32/c
 
 ***Example Usage***  
 To turn 1199259045 (01000111011110110011110110100101) to 27504.27734375:
-```
+```mcfunction
 # first decompose the raw float
 scoreboard players set P0 io 1199259045
 function float:32/decompose/main
@@ -238,7 +242,9 @@ scoreboard players operation P2 io = R2 io
 function float:32/convert/to_storage/main
 ```
 You can access the returned NBT storage float using  
-```/data get storage io hmmm:R0```
+```mcfunction
+data get storage io hmmm:R0
+```
 
 # Endnote
 
