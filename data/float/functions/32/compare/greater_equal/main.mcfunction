@@ -12,5 +12,4 @@
 #
 scoreboard players set R0 io 0
 execute if score P0 io matches 0 if score P3 io matches 1 run scoreboard players set R0 io 1
-execute if score R0 io matches 0 if score P1 io > P4 io run scoreboard players set R0 io 1
-execute if score R0 io matches 0 if score P1 io = P4 io if score P2 io >= P5 io run scoreboard players set R0 io 1
+execute if score P0 io = P3 io run function float:32/compare/greater_equal/branch0
