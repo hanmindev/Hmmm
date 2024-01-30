@@ -253,6 +253,6 @@ Hopefully that wasn't too confusing, it's my first time writing a lengthy docume
 # License
 
 This library is protected under the MIT standard license. In essense: 
-1. You can do whatever you want with this as long as you provide credit (Must contain name "hanmangokiwi")
+1. You can do whatever you want with this as long as you provide credit
 2. It's not my fault if my code doesn't work and broke something. I'm not responsible if you decided it would be funny to launch a nuclear missile with my code and an error causes it to destroy your home (but why are you using Minecraft for this?).
 3. Read the included LICENSE file for detailed information
